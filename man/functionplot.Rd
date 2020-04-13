@@ -4,10 +4,24 @@
 \alias{functionplot}
 \title{Interactive `d3.js` Function Plots}
 \usage{
-functionplot(fn = NULL, target = NULL, title = NULL, xDomain = NULL,
-  yDomain = NULL, xLabel = NULL, yLabel = NULL, disableZoom = NULL,
-  grid = NULL, tip = NULL, annotations = NULL, plugins = NULL, ...,
-  width = NULL, height = NULL, elementId = NULL)
+functionplot(
+  fn = NULL,
+  target = NULL,
+  title = NULL,
+  xDomain = NULL,
+  yDomain = NULL,
+  xLabel = NULL,
+  yLabel = NULL,
+  disableZoom = NULL,
+  grid = NULL,
+  tip = NULL,
+  annotations = NULL,
+  plugins = NULL,
+  ...,
+  width = NULL,
+  height = NULL,
+  elementId = NULL
+)
 }
 \description{
 Create an interactive d3.js based function plot as an htmlwidget.
@@ -115,8 +129,7 @@ functionplot(
 functionplot(
   tip = list(
     xLine = TRUE,
-    yLine = TRUE,
-    renderer = htmlwidgets::JS("function(x,y,index){ }")
+    yLine = TRUE
   ),
   yDomain = c(-1, 9),
   fn = list(
@@ -352,4 +365,3 @@ functionplot(
 )
 
 }
-

@@ -100,8 +100,7 @@ functionplot(
 functionplot(
   tip = list(
     xLine = TRUE,
-    yLine = TRUE,
-    renderer = htmlwidgets::JS("function(x,y,index){ }")
+    yLine = TRUE
   ),
   yDomain = c(-1, 9),
   fn = list(
